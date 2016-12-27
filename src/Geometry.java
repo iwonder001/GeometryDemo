@@ -43,7 +43,17 @@ public class Geometry {
 		return areaR;
 	}
 	public static double triangleArea(double base, double height) {
+		System.out.println("What is the base of the triangle? ");
+		base = input.nextDouble();
+		System.out.println("What is the height of the triangle? ");
+		height = input.nextDouble();
+		if(base <0){
+			System.out.println("Error!!!  You must enter a positive value");
+		}else if (height <0){
+			System.out.println("Error!!!  You must enter a positive value");
+		}else{
 		areaT = base * height *0.5;
+		}
 		return areaT;
 	}
 }
